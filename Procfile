@@ -1,1 +1,1 @@
-web: gunicorn jithubapi.wsgi --log-file -
+web: gunicorn jithubapi.wsgi
