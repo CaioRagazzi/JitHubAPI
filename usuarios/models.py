@@ -1,5 +1,7 @@
 from django.db import models
 
+# classe de usuarios
+
 
 class Usuarios(models.Model):
     nome = models.CharField(max_length=150)
