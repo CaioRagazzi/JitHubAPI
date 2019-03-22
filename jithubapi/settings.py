@@ -28,7 +28,10 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['https://jithubapi.herokuapp.com/',
-                 'http://127.0.0.1:8000/', 'jithubapi.herokuapp.com']
+                 'http://127.0.0.1:8000/',
+                 'jithubapi.herokuapp.com',
+                 '127.0.0.1',
+                 ]
 
 
 # Application definition

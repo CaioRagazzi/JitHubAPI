@@ -1,6 +1,6 @@
 from django.db import models
 
-# classe de usuarios.
+# classe de usuarios.pip
 
 
 class Usuarios(models.Model):
