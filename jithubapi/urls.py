@@ -18,9 +18,13 @@ from django.urls import include, path
 from django.urls import path
 from rest_framework import routers
 from usuarios.api.viewsets import UsuarioViewSet
+from perguntas.api.viewsets import PerguntaViewSet
+from formularios.api.viewsets import FormularioViewSet
 
 router = routers.DefaultRouter()
 router.register(r'usuarios', UsuarioViewSet, base_name='Usuario')
+router.register(r'perguntas', PerguntaViewSet, base_name='Pergunta')
+router.register(r'formularios', FormularioViewSet, base_name='Formulario')
 
 urlpatterns = [
     path('', include(router.urls)),
